@@ -1,7 +1,7 @@
 TODO List
 
-- [ ] BACKEND
-  - [ ] Implement RESTful API to manage films
+- [x] BACKEND
+  - [x] Implement RESTful API to manage films
     Films should have fields:
     Name
     Description
@@ -11,7 +11,7 @@ TODO List
     Country
     Genre
     Photo
-  - [ ] All fields are required, rating is on scale from 1 to 5, 1 film can have several genres.
+  - [x] All fields are required, rating is on scale from 1 to 5, 1 film can have several genres.
 - [ ] FRONTEND 
   - [ ] create frontend page /films/ to show all films through API. 1 film per 1 page. 
   - [ ] add redirect from / to /films/

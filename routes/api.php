@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('films', 'FilmController@index');
+Route::get('films/{film}', 'FilmController@show');
+Route::get('film/add', 'FilmController@create');
+Route::post('film/add', 'FilmController@store');
+Route::put('films/{film}', 'FilmController@update');
+Route::delete('films/{film}', 'FilmController@delete');

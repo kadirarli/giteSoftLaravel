@@ -19,3 +19,31 @@
     DB_USERNAME=db_username
     DB_PASSWORD=db_password
     
+3. Model and migration of film are created.
+    
+    Model and migration of genre are created.
+    $ php artisan make:model Film -m
+    $ php artisan make:model Genre -m
+    
+    Before $ php artisan migrate
+    You should do below lines.
+    
+    In AppServiceProvider.php
+    
+    use Illuminate\Support\Facades\Schema;
+    
+    public function boot()
+    {
+        Schema::defaultStringLength(191);
+    }
+    
+    to create Controller for film
+    
+    $ php artisan make:controller FilmController
+    
+    $ php artisan make:request FilmRequest
+    
+
+    
+
+
