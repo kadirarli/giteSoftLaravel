@@ -18,6 +18,11 @@ class FilmController extends Controller
         return $film;
     }
 
+    public function create()
+    {
+        //return view('filmCreate');
+    }
+
     public function store(FilmRequest $request)
     {
         $film = Film::create($request->all());

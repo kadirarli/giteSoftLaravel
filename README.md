@@ -43,7 +43,8 @@
     
     $ php artisan make:request FilmRequest
     
+4. Redirect (from / to /films/) is added.
 
-    
+
 
 

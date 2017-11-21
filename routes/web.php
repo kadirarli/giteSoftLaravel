@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/films');
+    //return view('welcome');
 });
+
+Route::get('films', 'FilmController@index');
+Route::get('films/{film}', 'FilmController@show');
+Route::get('film/add', 'FilmController@create');
+Route::post('film/add', 'FilmController@store');
+Route::put('films/{film}', 'FilmController@update');
+Route::delete('films/{film}', 'FilmController@delete');
