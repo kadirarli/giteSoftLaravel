@@ -55,3 +55,5 @@
     
     $ php artisan db:seed --class=GenresTableSeeder
     
+6. Film list and single film pages are created.
+

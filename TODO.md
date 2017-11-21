@@ -13,7 +13,7 @@ TODO List
     Photo
   - [x] All fields are required, rating is on scale from 1 to 5, 1 film can have several genres.
 - [ ] FRONTEND 
-  - [ ] create frontend page /films/ to show all films through API. 1 film per 1 page. 
+  - [x] create frontend page /films/ to show all films through API. 1 film per 1 page. 
   - [x] add redirect from / to /films/
   - [ ] implement frontend page /films/film-slug-name to show specific film. URL should have film's slug.
   - [ ] implement frontend page /films/create with form to create new film. 

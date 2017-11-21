@@ -8,19 +8,33 @@ use App\Http\Requests\FilmRequest;
 
 class FilmController extends Controller
 {
+
+    protected $request;
+
+    public function __construct(Request $request) {
+        $this->request = $request;
+    }
+
     public function index()
     {
-        return Film::all();
+        $films = Film::all();
+        if ($this->request->isJson()){
+            return $films;
+        }
+        return view('films', array('films' => $films));
     }
 
     public function show(Film $film)
     {
-        return $film;
+        if ($this->request->isJson()){
+            return $film;
+        }
+        return view('film',array('film' => $film));
     }
 
     public function create()
     {
-        //return view('filmCreate');
+        //return view('film');
     }
 
     public function store(FilmRequest $request)
