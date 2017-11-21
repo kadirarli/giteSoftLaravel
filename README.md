@@ -45,6 +45,13 @@
     
 4. Redirect (from / to /films/) is added.
 
+5. Before listing films, Films and genres seeder are created.
 
+    $ php artisan make:seeder FilmsTableSeeder
 
-
+    $ php artisan db:seed --class=FilmsTableSeeder
+    
+    $ php artisan make:seeder GenresTableSeeder
+    
+    $ php artisan db:seed --class=GenresTableSeeder
+    

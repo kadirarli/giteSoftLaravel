@@ -21,7 +21,7 @@ class CreateFilmsTable extends Migration
             $table->integer('rating')->nullable(false); // this will be between 1-5
             $table->float('ticket_price', 8, 2)->nullable(false);
             $table->string('country')->nullable(false); // If you want, you can use foreign key.
-            $table->binary('photo')->nullable(false);
+            $table->string('photo')->nullable(false);
             $table->timestamps();
         });
     }
