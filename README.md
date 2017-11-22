@@ -68,4 +68,39 @@
     
 8. To create new film, page is created.
 
+9. Registration and Authentication are added.
+
+    $ php artisan make:migration --table=users add_api_token_to_users_table
+    $ php artisan migrate
+    
+    You can use for testing user registration by using api.
+    
+    $ curl -X POST http://localhost:8000/api/register \
+     -H "Accept: application/json" \
+     -H "Content-Type: application/json" \
+     -d '{"name": "Kadir", "email": "kadirarli@gmail.com", "password": "123456", "password_confirmation": "123456"}'
+     
+     Result: 
+     {"data":{"name":"Kadir","email":"kadir.arli@gmail.com","updated_at":"2017-11-22 02:22:37","created_at":"2017-11-22 02:22:37","id":1,"api_token":"vdJUIREYkPZ3mrKRCEJ65EweHPLMaNHmQ2eeuDbHKoa75ggUS1xWNyN47LUB"}}
+     
+     You can use for testing user login by using api.
+     
+     $ curl -X POST http://localhost:8000/api/login \
+         -H "Accept: application/json" \
+         -H "Content-type: application/json" \
+         -d "{\"email\": \"kadir.arli@gmail.com\", \"password\": \"123456\" }"
+     
+    Result: 
+    {"data":{"id":1,"name":"Kadir","email":"kadir.arli@gmail.com","created_at":"2017-11-22 02:22:37","updated_at":"2017-11-22 02:56:39","api_token":"IDFPt9h0uwN2j8b6pKjk5VrRi8SS3IiS8WeSDannSsfpPGAp3dwMAYA2vQ1r"}}
+    
+    You can logout by using below command.
+    
+    $ curl -X POST http://localhost:8000/api/logout \
+               -H "Accept: application/json" \
+               -H "Content-type: application/json" \
+               -d "{\"api_token\": \"IDFPt9h0uwN2j8b6pKjk5VrRi8SS3IiS8WeSDannSsfpPGAp3dwMAYA2vQ1r\" }"
+    
+    Result:
+    {"data":"User logged out."}
+    
     

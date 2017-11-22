@@ -17,7 +17,7 @@ TODO List
   - [x] add redirect from / to /films/
   - [x] implement frontend page /films/film-slug-name to show specific film. URL should have film's slug.
   - [x] implement frontend page /films/create with form to create new film. 
-  - [ ] add registration and authentication
+  - [x] add registration and authentication
   - [ ] add possibility to post comments for each films. Fields "Name" and "Comment" are required. 
   - [ ] only registered users can post comments
 - [ ] RESULT
