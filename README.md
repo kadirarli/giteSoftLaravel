@@ -57,3 +57,12 @@
     
 6. Film list and single film pages are created.
 
+7. Slug is created.
+
+    $ php artisan make:migration add_slug_to_films
+    $ php artisan migrate
+    
+    run again
+    $ php artisan db:seed --class=FilmsTableSeeder
+    $ php artisan db:seed --class=GenresTableSeeder
+    

@@ -15,7 +15,7 @@ TODO List
 - [ ] FRONTEND 
   - [x] create frontend page /films/ to show all films through API. 1 film per 1 page. 
   - [x] add redirect from / to /films/
-  - [ ] implement frontend page /films/film-slug-name to show specific film. URL should have film's slug.
+  - [x] implement frontend page /films/film-slug-name to show specific film. URL should have film's slug.
   - [ ] implement frontend page /films/create with form to create new film. 
   - [ ] add registration and authentication
   - [ ] add possibility to post comments for each films. Fields "Name" and "Comment" are required. 

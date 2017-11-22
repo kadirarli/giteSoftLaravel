@@ -14,7 +14,7 @@ class GenresTableSeeder extends Seeder
     public function run()
     {
         // Truncate our existing records.
-        // Genre::truncate();
+        Genre::truncate();
         $faker = \Faker\Factory::create();
         // Create a few film in our database:
 

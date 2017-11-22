@@ -17,7 +17,7 @@ Route::get('/', function () {
 });
 
 Route::get('films', 'FilmController@index');
-Route::get('films/{film}', 'FilmController@show');
+Route::get('films/{slug}', 'FilmController@show');
 Route::get('film/add', 'FilmController@create');
 Route::post('film/add', 'FilmController@store');
 Route::put('films/{film}', 'FilmController@update');

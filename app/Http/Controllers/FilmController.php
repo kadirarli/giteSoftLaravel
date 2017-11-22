@@ -24,8 +24,9 @@ class FilmController extends Controller
         return view('films', array('films' => $films));
     }
 
-    public function show(Film $film)
+    public function show($slug)
     {
+        $film = Film::where('slug', $slug)->firstOrFail();
         if ($this->request->isJson()){
             return $film;
         }
