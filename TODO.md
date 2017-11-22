@@ -25,4 +25,4 @@ TODO List
   - [ ] in comment to that task provide summary of your work in English. Please, write it in formal way as if you're talking with client
   - [ ] stop timer when you finish your work
 - [ ]NOTES:
-  - [ ] Create DB seeder with 3 films and 1 comment for every film
+  - [x] Create DB seeder with 3 films and 1 comment for every film

@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Genre;
+use App\Comment;
 use App\Film;
 
-class GenresTableSeeder extends Seeder
+class CommentsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,17 +14,18 @@ class GenresTableSeeder extends Seeder
     public function run()
     {
         // Truncate our existing records.
-        Genre::truncate();
+        Comment::truncate();
         $faker = \Faker\Factory::create();
-        // Create a few genre in our database:
+        // Create a few comment in our database:
 
-        for ($i = 0; $i < 10; $i++) {
+        $films = Film::all();
 
-            $films = Film::orderByRaw("RAND()")->first();
-
-            Genre::create([
-                'film_id' => $films->id,
+        foreach ($films as $film){
+            Comment::create([
+                'film_id' => $film->id,
                 'name' => $faker->name,
+                'comment' => $faker->text(180),
+
             ]);
         }
     }

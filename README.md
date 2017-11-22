@@ -115,5 +115,8 @@
     
 11. Only registered users can post comments.
 
-
+12. Seeder for comment is created.
+    
+    $ php artisan make:seeder CommentsTableSeeder
+    $ php artisan db:seed --class=CommentsTableSeeder
     
