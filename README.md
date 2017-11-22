@@ -116,7 +116,10 @@
 11. Only registered users can post comments.
 
 12. Seeder for comment is created.
-    
+
     $ php artisan make:seeder CommentsTableSeeder
     $ php artisan db:seed --class=CommentsTableSeeder
     
+13. SUMMARY:
+    About Project: The project can work both over the API and over the web. You can add movie. You can list the movies you added. Registered users can comment on movies. Validation rules are added.
+

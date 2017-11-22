@@ -21,8 +21,8 @@ TODO List
   - [x] add possibility to post comments for each films. Fields "Name" and "Comment" are required. 
   - [x] only registered users can post comments
 - [ ] RESULT
-  - [ ] A new git repository should be created for the project and all changes should be committed progressively. We should be able to easily see the parts you coded and differentiate it from framework code. Please add the public repository url to your reply.
-  - [ ] in comment to that task provide summary of your work in English. Please, write it in formal way as if you're talking with client
+  - [x] A new git repository should be created for the project and all changes should be committed progressively. We should be able to easily see the parts you coded and differentiate it from framework code. Please add the public repository url to your reply.
+  - [x] in comment to that task provide summary of your work in English. Please, write it in formal way as if you're talking with client
   - [ ] stop timer when you finish your work
 - [ ]NOTES:
   - [x] Create DB seeder with 3 films and 1 comment for every film
