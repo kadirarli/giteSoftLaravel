@@ -66,3 +66,6 @@
     $ php artisan db:seed --class=FilmsTableSeeder
     $ php artisan db:seed --class=GenresTableSeeder
     
+8. To create new film, page is created.
+
+    

@@ -31,15 +31,15 @@ class FilmRequest extends FormRequest
             'description'  => 'required',
             'release_date' => 'required|date',
             'rating' => 'required|integer|between:1,5',
-            'ticket_price' => 'required|integer',
+            'ticket_price' => 'required|regex:/^\d*(\.\d{1,2})?$/',
             'country' => 'required|string',
         ];
 
         if(request()->isMethod('post')){
-            $rules['photo'] = 'required|mimetypes:image/jpg,image/png';
+            $rules['photo'] = 'required|mimes:jpeg,bmp,png';
         }
         if(request()->isMethod('put') OR request()->isMethod('patch')){
-            $rules['photo'] = 'mimetypes:image/jpg,image/png';
+            $rules['photo'] = 'mimes:jpeg,bmp,png';
         }
 
         return $rules;

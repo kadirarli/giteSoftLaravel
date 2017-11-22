@@ -35,14 +35,25 @@ class FilmController extends Controller
 
     public function create()
     {
-        //return view('film');
+        return view('filmCreate');
     }
 
     public function store(FilmRequest $request)
     {
-        $film = Film::create($request->all());
+        $inputs = $request->all();
+        $photoName = time().'.'.$request->photo->getClientOriginalExtension();
+        $request->photo->move(public_path('/storage/images/'), $photoName);
+        $inputs['photo'] = '/storage/images/'.$photoName;
 
-        return response()->json($film, 201);
+        $film = Film::create($inputs);
+
+        if ($this->request->isJson()){
+            return response()->json($film, 201);
+        }
+
+        $message = "Film Saved";
+
+        return view('filmCreate', array('message' => $message));
     }
 
     public function update(Request $request, Film $film)

@@ -12,7 +12,7 @@
             <div class="col-lg-offset-2 col-lg-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Films <a href="#" class="pull-right"><i class="fa fa-plus" aria-hidden="true"></i></a> </h3>
+                        <h3 class="panel-title">Films <a href="/films/create" class="pull-right"><i class="fa fa-plus" aria-hidden="true"></i></a> </h3>
                     </div>
                     <div class="panel-body">
                         <ul class="list-group">

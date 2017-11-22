@@ -13,4 +13,10 @@ class Film extends Model
         return $this->hasMany('App\Genre');
     }
 
+    public function setNameAttribute($value)
+    {
+        $this->attributes['name'] = $value;
+        $this->attributes['slug'] = str_slug($value);
+    }
+
 }
