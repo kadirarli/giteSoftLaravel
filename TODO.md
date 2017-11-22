@@ -19,7 +19,7 @@ TODO List
   - [x] implement frontend page /films/create with form to create new film. 
   - [x] add registration and authentication
   - [x] add possibility to post comments for each films. Fields "Name" and "Comment" are required. 
-  - [ ] only registered users can post comments
+  - [x] only registered users can post comments
 - [ ] RESULT
   - [ ] A new git repository should be created for the project and all changes should be committed progressively. We should be able to easily see the parts you coded and differentiate it from framework code. Please add the public repository url to your reply.
   - [ ] in comment to that task provide summary of your work in English. Please, write it in formal way as if you're talking with client

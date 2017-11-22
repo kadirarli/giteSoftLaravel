@@ -113,4 +113,7 @@
     $ php artisan make:controller CommentController
     $ php artisan make:request CommentRequest
     
+11. Only registered users can post comments.
+
+
     
