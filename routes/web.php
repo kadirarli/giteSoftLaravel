@@ -22,3 +22,5 @@ Route::post('films/create', 'FilmController@store');
 Route::put('films/{film}', 'FilmController@update');
 Route::delete('films/{film}', 'FilmController@delete');
 Route::get('films/{slug}', 'FilmController@show');
+
+Route::post('films/{slug}/comments/create', 'CommentController@store');

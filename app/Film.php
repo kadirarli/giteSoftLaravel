@@ -19,4 +19,9 @@ class Film extends Model
         $this->attributes['slug'] = str_slug($value);
     }
 
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
+
 }

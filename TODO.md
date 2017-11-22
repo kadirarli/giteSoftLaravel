@@ -18,7 +18,7 @@ TODO List
   - [x] implement frontend page /films/film-slug-name to show specific film. URL should have film's slug.
   - [x] implement frontend page /films/create with form to create new film. 
   - [x] add registration and authentication
-  - [ ] add possibility to post comments for each films. Fields "Name" and "Comment" are required. 
+  - [x] add possibility to post comments for each films. Fields "Name" and "Comment" are required. 
   - [ ] only registered users can post comments
 - [ ] RESULT
   - [ ] A new git repository should be created for the project and all changes should be committed progressively. We should be able to easily see the parts you coded and differentiate it from framework code. Please add the public repository url to your reply.

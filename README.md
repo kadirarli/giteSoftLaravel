@@ -103,4 +103,14 @@
     Result:
     {"data":"User logged out."}
     
+10. Comment is added.
+
+    $ php artisan make:model Comment -m
+    $ php artisan migrate
+    
+    to create Comment Controller
+    
+    $ php artisan make:controller CommentController
+    $ php artisan make:request CommentRequest
+    
     
